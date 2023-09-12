@@ -1,0 +1,144 @@
+*{margin: 0; padding:0 ; box-sizing: border-box; font-family: "DM Sans", "Segoe UI";}
+.header {
+    background: linear-gradient(to right, #434343, #000000);
+
+    display: grid;
+    align-items: center;
+    justify-content:center;
+}
+ .cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first{
+    display: block;
+    width: 100%;
+}
+.second{
+    width: 250px;
+    height: 200px;
+   
+    object-fit: cover;
+    margin-top: -100px;
+    margin-left: 1.9rem;
+    
+}
+.intro{   
+ margin-top: 0;
+ height: 100px;
+ display:flex;
+ 
+}
+.name{
+    display:block ;
+    padding-left: 1%;
+    margin-top: 1.5rem;
+
+}
+.intro h4{
+   
+    color: whitesmoke ;
+    justify-content: center;
+   
+}
+.intro h2{
+   
+    font-family:sans-serif;
+    font-size: 2rem;
+    color: white;
+
+
+}
+.gridDetails {
+    margin: 2%;
+    grid-gap: 1rem;;
+    display: grid;
+   
+} 
+
+.ContactDetails,
+.EducationDetails,
+.languages,
+.projects,
+.cer {
+     background: linear-gradient(to right, #dd1818, #333333); 
+    color: white;
+    border-radius: 10px;
+    padding: 2% 4%;
+    display:grid;
+    align-items:center;
+    transition: all 0.5s ease 0s;
+}
+.ContactDetails li{
+    list-style: none;
+}
+.ContactDetails a{
+    color: white;
+    text-decoration: solid;
+}
+.EducationDetails {
+    grid-row-start:1;
+    grid-row-end: 3;
+}
+footer{
+    text-align: center;
+ align-items: center;
+ justify-content: center;
+ background-color:white;
+ border-radius: none;
+}
+.logo img{
+    margin: 1%;
+    width: 50px;
+    height:50px;
+    align-items:center;
+    justify-content:space-evenly;
+    background-color: white;  
+}
+@media (min-width:600px){
+    .gridDetails{grid-template-columns: repeat(2,1fr);}
+    .second{
+        margin-top: -4rem;
+        margin-left:1rem ;
+        width: 25%;
+        height: 10rem;
+    } 
+}
+@media (min-width:900px){
+    .gridDetails{grid-template-columns: repeat(3,1fr);}
+    .second{
+        margin-left: 1.9rem;
+        height: 13rem;
+        margin-top: -6.5rem;
+        border-radius:15% 0% 15% 0% ;
+        
+    }
+}
+
+@media(max-width:600px){
+     .second{
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 140px;
+        height: 90px;
+        margin-top:px;
+        position:relative; 
+        margin-bottom: -3rem;
+        margin-left: -5px;
+        clip-path: circle(50%);
+     }
+    
+    .intro{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 120px;
+        background-size:cover;
+    } 
+    .name{
+        margin-top: 45px;
+    }
+}
